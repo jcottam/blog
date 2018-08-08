@@ -1,8 +1,9 @@
 <template>
   <section class="container">
+    <h1><a href="https://medium.com/@johnryancottam/running-nuxt-in-parallel-with-express-ffbd1feef83c" target="_blank">Running NUXT in parallel with Express</a></h1>
       <div class="movie" v-if="movie">
         <img :src="movie.Poster">
-        <h1>{{movie.Title}}</h1>
+        <h2>{{movie.Title}}</h2>
         <h3>{{movie.Year}}</h3>
         <button @click="getRandomMovie">Get Random Movie</button>
       </div>
@@ -32,18 +33,22 @@ export default {
 .container {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: sans-serif;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
 .movie img {
   width: 300px;
   height: 445px;
 }
 
-.movie h1 {
+.movie h2 {
   margin-top: 5px;
 }
 

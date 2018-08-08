@@ -1,0 +1,19 @@
+{
+  "name": "cypress.io",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^3.0.3"
+  }
+}

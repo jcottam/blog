@@ -1,8 +1,8 @@
 {
   "name": "nuxt-with-express",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "John Ryan Cottam <jcottam@gmail.com>",
+  "description": "https://medium.com/@johnryancottam/running-nuxt-in-parallel-with-express-ffbd1feef83c",
+  "author": "John Ryan Cottam",
   "private": true,
   "scripts": {
     "dev": "nuxt",

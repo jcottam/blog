@@ -29,8 +29,8 @@ app.post('/upload', (req, res, next) => {
     const cloudinary = require('cloudinary').v2
     cloudinary.config({
       cloud_name: 'sharethroughgallery',
-      api_key: '685687633298392',
-      api_secret: 'I2fP2qLCWIDdEs2dixZrWHay2Uo'
+      api_key: '***',
+      api_secret: '***'
     })
 
     const path = req.file.path
