@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  height: 30px;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background-color: #172431;
+  color: white;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  background-color: #172431;
+  color: white;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  font-style: italic;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+header p {
+  color: yellow;
+  font-weight: bold;
+}
+
+header a {
+  color: inherit;
+}
+
+header p .release-date {
+  margin-left: 9px;
+  font-size: 0.8em;
+  color: powderblue;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 96px 0 50px;
+}
+
+.movie-item {
+  max-width: 50%;
+  flex-basis: 50%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.backdrop {
+  overflow: hidden;
+  background-color: #f6f6f6;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+.movie-item:hover .backdrop {
+  background-color: #ccc;
+}
+
+.movie-poster {
+  width: 150px;
+  height: 225px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+  .movie-item {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
