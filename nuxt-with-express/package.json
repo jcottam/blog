@@ -1,9 +1,9 @@
 {
   "name": "nuxt-with-express",
   "version": "1.0.0",
-  "description": "My terrific Nuxt.js project",
+  "description": "Running NUXT in parallel with Express. Blog post available here, https://medium.com/@johnryancottam/running-nuxt-in-parallel-with-express-ffbd1feef83c",
   "author": "John Ryan Cottam",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
