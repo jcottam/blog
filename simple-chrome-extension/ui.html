@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My First Chrome Extension</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <style>
+      #ui {
+        padding: 10px 14px 14px;
+        width: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="ui">
+      <div class="container">
+        <h1 class="title">My First Extension</h1>
+        <p class="subtitle status">Status goes here...</p>
+        <button id="copyLinks" class="button is-primary mb-2">
+          Copy webpage links to clipboard
+        </button>
+        <button id="removeIFramesBtn" class="button is-info">
+          Remove iFrames
+        </button>
+        <button class="button is-info">Remove CSS</button>
+      </div>
+    </div>
+    <script src="ui.js"></script>
+  </body>
+</html>

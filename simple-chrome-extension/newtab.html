@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <style>
+      body {
+        background-color: rgb(255, 111, 111);
+      }
+      .mantra-screen {
+        height: 400px;
+        width: 100%;
+        background: url(http://foundermantras.com/img/quotes.png) no-repeat;
+        position: absolute;
+        top: 10px;
+        z-index: -2;
+      }
+
+      blockquote {
+        color: #fff;
+        font-size: 60px;
+        line-height: 1.1;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        right: 20%;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      #topSites {
+        color: #333;
+      }
+      #topSites a {
+        color: #333;
+        text-decoration: none;
+      }
+      #topSites a:hover {
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mantra-screen"></div>
+    <div class="quote-container">
+      <blockquote>The expert at anything was once a beginner.</blockquote>
+    </div>
+    <div id="topSites"></div>
+    <script src="newtab.js"></script>
+  </body>
+</html>
